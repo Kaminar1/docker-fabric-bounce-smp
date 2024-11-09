@@ -12,13 +12,5 @@ RUN chmod +x /entrypoint.sh && chmod +x /server/start.sh
 
 # env's for retaining data paths
 ENV WORLD_DIR=/data/world
-ENV CONFIG_DIR=/data/config
-ENV CRASH_REPORTS_DIR=/data/crash-reports
-ENV LOGS_DIR=/data/logs
-ENV WHITELIST_FILE=/data/whitelist.json
-ENV OPS_FILE=/data/ops.json
-ENV BANNED_PLAYERS_FILE=/data/banned-players.json
-ENV BANNED_IPS_FILE=/data/banned-ips.json
-ENV SERVER_PROPERTIES_FILE=/data/server.properties
 
 ENTRYPOINT ["/entrypoint.sh"]
